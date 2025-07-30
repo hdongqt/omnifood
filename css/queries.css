@@ -48,6 +48,13 @@
     font-size: 4.4rem;
   }
 
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1.2rem;
+    column-gap: 2rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -210,10 +217,6 @@
 
   .hero-img {
     width: 80%;
-  }
-
-  .logos img {
-    height: 2.4rem;
   }
 
   .step-img-box:nth-child(2) {
