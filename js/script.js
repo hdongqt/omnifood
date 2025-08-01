@@ -30,6 +30,10 @@ allLinks.forEach(function (link) {
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+      if (menuOpen) {
+        menuOpen = false;
+        headerEl.classList.remove("nav-open");
+      }
     }
   });
 });
