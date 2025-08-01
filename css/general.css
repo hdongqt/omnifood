@@ -21,7 +21,6 @@ body {
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 /* GENERAL REUSABLE COMPONENTS  */
 .heading-primary,
@@ -192,4 +191,25 @@ strong {
 
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
+}
+
+.select-custom {
+  position: relative;
+}
+
+.select-custom select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-custom::before {
+  content: "▼";
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  pointer-events: none;
+  font-size: 12px;
 }

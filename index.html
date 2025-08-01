@@ -23,9 +23,19 @@
   </head>
   <body>
     <header class="header">
-      <img src="./img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+      <a href="#">
+        <img src="./img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
+          <li>
+            <a href="#" class="main-nav-link main-nav-link-logo">
+              <img
+                src="./img/omnifood-logo.png"
+                alt="Omnifood logo"
+                class="logo-mobile"
+            /></a>
+          </li>
           <li><a href="#how" class="main-nav-link">How it works</a></li>
           <li><a href="#meals" class="main-nav-link">Meals</a></li>
           <li>
@@ -33,7 +43,7 @@
           </li>
           <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
           <li>
-            <a href="#cta " class="main-nav-link nav-cta">Try for free</a>
+            <a href="#cta" class="main-nav-link nav-cta">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -588,14 +598,16 @@
                 </div>
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" name="select-where">
-                    <option value="">Please choose one option:</option>
-                    <option value="friends">Friends and family</option>
-                    <option value="youtube">Youtube video</option>
-                    <option value="podcast">Podcast</option>
-                    <option value="ad">Facebook ad</option>
-                    <option value="others">Others</option>
-                  </select>
+                  <div class="select-custom">
+                    <select id="select-where" name="select-where">
+                      <option value="">Please choose one option:</option>
+                      <option value="friends">Friends and family</option>
+                      <option value="youtube">Youtube video</option>
+                      <option value="podcast">Podcast</option>
+                      <option value="ad">Facebook ad</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
                 </div>
                 <button class="btn btn--form">Sign up now</button>
               </form>
